@@ -1,0 +1,197 @@
+/* === 新增：讓網頁跳轉時有平滑滾動的特效 === */
+html {
+    scroll-behavior: smooth;
+}
+
+/* === 新增：6種口味區塊的排版 === */
+.section-title {
+    color: #56B4D3;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* 使用 Grid 網格排版，讓卡片自動排列 */
+.flavor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 一排顯示 3 個 */
+    gap: 30px; /* 卡片之間的距離 */
+    max-width: 1000px;
+    margin: 0 auto; /* 讓整個區塊置中 */
+}
+
+/* 每一顆水餃卡片的活潑設計 */
+.flavor-card {
+    background-color: white;
+    border-radius: 15px; /* 圓角 */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* 淡淡的陰影 */
+    transition: transform 0.3s, box-shadow 0.3s; /* 滑鼠移過去的動畫準備 */
+}
+
+/* 滑鼠移到水餃卡片上方時，卡片會浮起來！ */
+.flavor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* 讓圖片完美塞進卡片裡 */
+.flavor-card img {
+    width: 100%;
+    height: 200px; /* 固定圖片高度 */
+    object-fit: cover; /* 讓圖片不變形 */
+    border-radius: 10px;
+}
+
+.flavor-card h3 {
+    color: #333;
+    margin-top: 15px;
+    font-size: 20px;
+}/* === 新增：讓網頁跳轉時有平滑滾動的特效 === */
+html {
+    scroll-behavior: smooth;
+}
+
+/* === 新增：6種口味區塊的排版 === */
+.section-title {
+    color: #56B4D3;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* 使用 Grid 網格排版，讓卡片自動排列 */
+.flavor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 一排顯示 3 個 */
+    gap: 30px; /* 卡片之間的距離 */
+    max-width: 1000px;
+    margin: 0 auto; /* 讓整個區塊置中 */
+}
+
+/* 每一顆水餃卡片的活潑設計 */
+.flavor-card {
+    background-color: white;
+    border-radius: 15px; /* 圓角 */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* 淡淡的陰影 */
+    transition: transform 0.3s, box-shadow 0.3s; /* 滑鼠移過去的動畫準備 */
+}
+
+/* 滑鼠移到水餃卡片上方時，卡片會浮起來！ */
+.flavor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* 讓圖片完美塞進卡片裡 */
+.flavor-card img {
+    width: 100%;
+    height: 200px; /* 固定圖片高度 */
+    object-fit: cover; /* 讓圖片不變形 */
+    border-radius: 10px;
+}
+
+.flavor-card h3 {
+    color: #333;
+    margin-top: 15px;
+    font-size: 20px;
+}/* 基礎設定，讓字體更活潑圓滑 */
+body {
+    font-family: 'Arial', '微軟正黑體', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f9f9; /* 非常淺的藍灰色背景 */
+    color: #333;
+}
+
+/* === Nav 導覽列設計 (活潑 + 天藍色) === */
+.main-nav {
+    background-color: #56B4D3; /* 活潑的天藍色 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 加上一點陰影增加立體感 */
+    border-bottom-left-radius: 15px; /* 圓角讓視覺更活潑 */
+    border-bottom-right-radius: 15px;
+}
+
+.main-nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav li {
+    margin-left: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px; /* 按鈕做成圓角藥丸狀 */
+    transition: background-color 0.3s, transform 0.2s; /* 加入互動動畫設定 */
+}
+
+/* 滑鼠移過去時的活潑效果 */
+.main-nav a:hover {
+    background-color: #FFD166; /* 撞色搭配：溫暖的銘黃色，適合食物 */
+    color: #333;
+    transform: translateY(-2px); /* 微微往上浮動 */
+}
+
+/* === 中間內容區塊 === */
+.content {
+    padding: 50px 30px;
+    text-align: center;
+    min-height: 50vh;
+}
+
+.content h1 {
+    color: #56B4D3;
+}
+
+/* === Footer 頁尾設計 (與 Nav 風格一致) === */
+.main-footer {
+    background-color: #56B4D3; /* 呼應導覽列的天藍色 */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 15px; /* 呼應圓角設計 */
+    border-top-right-radius: 15px;
+    margin-top: 30px;
+}
+
+.main-footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+/* === 關於我們區塊的排版 === */
+.about-box {
+    max-width: 800px;
+    margin: 0 auto 60px auto; /* 讓文字置中，並與下方保持距離 */
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* 淡淡的陰影 */
+    text-align: left; /* 文字靠左對齊比較好閱讀 */
+    line-height: 1.8; /* 增加行距，讓閱讀更舒適 */
+    font-size: 18px;
+    color: #444;
+}
+
+.about-box strong {
+    color: #56B4D3; /* 讓品牌名稱呈現天藍色重點 */
+    font-size: 20px;
+}	
